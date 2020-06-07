@@ -1,7 +1,7 @@
 {
-  "name": "wtf-webpack-starterkit",
+  "name": "Minimalista",
   "version": "1.0.0",
-  "description": "WTF Webpack starterkit",
+  "description": "layout for training",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "Webpack",
     "boilerplate"
   ],
-  "author": "Maciek Korsan",
+  "author": "Krzysztof Bartkiewicz",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.1",
