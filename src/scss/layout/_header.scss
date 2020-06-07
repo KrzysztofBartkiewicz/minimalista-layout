@@ -1,0 +1,13 @@
+.header-main {
+
+}
+
+.logo {
+   display: block;
+   margin: 0 auto;
+   width: 20rem;
+
+   &__img {
+      width: inherit;
+   }
+}
