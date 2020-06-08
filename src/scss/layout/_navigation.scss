@@ -1,0 +1,16 @@
+.nav-toggle {
+   display: block;
+   width: 6rem;
+   height: 6rem;
+   margin: 0 auto;
+   border: none;
+   background: transparent;
+
+   &__bar {
+      display: block;
+      width: 90%;
+      height: 5px;
+      background-color: var(--color-text-1);
+      color: black;
+   }
+}
