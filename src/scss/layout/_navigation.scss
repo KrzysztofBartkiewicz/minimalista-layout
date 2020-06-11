@@ -8,8 +8,8 @@
 
    &__box {
       display: block;
-      width: 6rem;
-      height: 6rem;
+      width: 5rem;
+      height: 4rem;
       background-color: var(--color-bg-primary);
       position: relative;
    }
@@ -52,3 +52,34 @@
 
 //----------NAVIGATION-----------------------
 
+.nav {
+   width: 100%;
+   max-height: 0;
+   overflow: hidden;
+   transition: .5s;
+
+   &__list {
+      padding: 0;
+      text-align: center;
+   }
+
+   &__item {
+      border-top: 1px solid var(--color-border-1);
+   }
+
+   &__link {
+      display: block;
+      width: 100%;
+      padding: 1.5rem 0;
+      color: var(--color-text-2);
+      transition: color .3s ease-in;
+      
+      &:hover {
+         color: var(--color-text-1);
+      }
+   }
+}
+
+.visible {
+   max-height: 30rem;
+}
