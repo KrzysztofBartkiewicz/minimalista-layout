@@ -1,13 +1,15 @@
 .header-main {
-
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .logo {
    display: block;
-   margin: 0 auto;
    width: 20rem;
 
    &__img {
-      width: inherit;
+      width: 100%;
    }
 }
