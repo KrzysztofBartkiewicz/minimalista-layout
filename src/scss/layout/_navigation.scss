@@ -1,7 +1,10 @@
+//----------HAMBURGER BUTTON-----------------------
 .hamburger {
    border: none;
    padding: 1rem;
+   margin-top: 1rem;
    background-color: transparent;
+   cursor: pointer;
 
    &__box {
       display: block;
@@ -16,11 +19,13 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
+      transition: background-color .1s .2s ease-in-out;
       
       &::before,
       &::after {
          @include hamburger-line;
          content: "";
+         transition: transform .1s .2s ease-in-out;
       }
 
       &::before {
@@ -32,3 +37,18 @@
       }
    }
 }
+
+.hamburger--active .hamburger__inner {
+   background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before {
+   transform: translateY(1.6rem) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+   transform: translateY(-1.6rem) rotate(-45deg);
+}
+
+//----------NAVIGATION-----------------------
+
